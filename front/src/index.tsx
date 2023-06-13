@@ -6,18 +6,15 @@ import reportWebVitals from './reportWebVitals';
 
 import {
   createBrowserRouter,
-  RouterProvider,
-  Link,
+  RouterProvider
 } from "react-router-dom";
+import IndexPage from './pages/index/indexPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
-      </div>
+      <IndexPage />
     ),
   },
   {
